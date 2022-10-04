@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方式二 定位</title>
+    <style>
+      /* .container {
+        position:relative;
+        width: 800px;
+        height: 400px;
+        background-color: lightgreen;
+      }
+      img {
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:-50px;
+        margin-top:-50px;
+        width: 100px;
+        height: 100px;
+      } */
+      .container {
+        position:relative;
+        width: 800px;
+        height: 400px;
+        background-color: lightgreen;
+      }
+      img {
+        position:absolute;
+        left:50%;
+        top:50%;
+        /* transform:translateX(-50%) translateY(-50%); */
+        transform:translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/5.png" alt="" />
+    </div>
+  </body>
+</html>
